@@ -1,0 +1,20 @@
+﻿@page "/"
+
+<PageTitle>Home</PageTitle>
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+<div>
+<Counter IncrementAmount="10" />
+</div>
+<br 
+<div>
+    <input @bind="text" />
+    <button @onclick="() => text = string.Empty">Clear</button>
+    <p>@text</p>
+</div>
+
+@code {
+    string text = "";
+}
